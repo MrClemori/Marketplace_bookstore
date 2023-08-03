@@ -1,4 +1,4 @@
-import { connection } from "../db.js";
+import { connection } from "../src/db.js"
 
 export const createBook = (book) => {
     connection.query('INSERT INTO books SET ?', book, function(error){
